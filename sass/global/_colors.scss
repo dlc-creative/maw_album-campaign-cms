@@ -1,0 +1,27 @@
+/* BASE */
+
+$colors: (
+	cadillacDarkGold: #817247,
+	cadillacLightGold: #c3b38b,
+	lightGoldFont: #ccc4b4,
+	cadillacDarkGray: #4b4b4b,
+	cadillacGray: #787878,
+	cadillacLightGray: #c8c8c8,
+	cadillacGold: #b5a36a,
+	cadillacRed: #8a1529,
+	cadillacBlue: #00426b,
+	cadillacWhite: #ffffff,
+	cadillacBlack: #000018
+);
+
+@function color($colorName) {
+  @return map-get($colors, $colorName);
+}
+
+@mixin setBackground($type) {
+	@if $type == 'cadillacDarkGold' {
+		background: map-get($colors, cadillacDarkGold);
+	}  @else {
+		background: map-get($colors, cadillacLightGold);
+	}
+}
