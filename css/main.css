@@ -1,0 +1,92 @@
+/* FONTS */
+@font-face {
+  font-family: "MAW";
+  src: url("../fonts/MAW/TTF/MAW.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+/* BASE */
+/* RESETS */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body {
+  font-family: "MAW", sans-serif !important;
+  font-weight: normal;
+  font-size: 15px;
+  font-smoothing: antialiased;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+body {
+  background: url("../img/maw-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-position: 50%; }
+  body:before {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #ff9000), color-stop(50%, #0000ff));
+    background: linear-gradient(#ff9000 20%, #0000ff 50%);
+    position: absolute;
+    left: 0;
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
+    opacity: 0.25; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+video {
+  width: 100%; }
+
+h1, h2, h3,
+h4, h5, h6,
+p {
+  font-family: "MAW", sans-serif !important;
+  font-weight: normal;
+  text-align: center; }
+
+a {
+  text-decoration: none !important; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#main-container #content {
+  margin: 13vh 0; }
+  #main-container #content #controls .control {
+    position: absolute;
+    z-index: 10;
+    line-height: 35;
+    width: 70px;
+    max-width: 70px;
+    color: transparent;
+    text-indent: -9999px; }
+    #main-container #content #controls .control.next {
+      right: 0; }
+    #main-container #content #controls .control.prev {
+      left: 0; }
+  #main-container #content .content-blocks {
+    margin: 0 auto; }
+    #main-container #content .content-blocks .blocks {
+      background: #f9f9f9;
+      display: block;
+      height: 500px;
+      position: relative;
+      z-index: 8;
+      -webkit-box-shadow: 0 0 10px #101010;
+              box-shadow: 0 0 10px #101010;
+      overflow: scroll; }
+      #main-container #content .content-blocks .blocks .contact {
+        margin: 1em 0;
+        text-align: center; }
+
+/* FOOTER */
