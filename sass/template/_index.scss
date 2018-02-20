@@ -14,25 +14,30 @@
         &.prev { left: 0; }
       }
     }
-    .content-blocks {
-      margin: 0 auto;
-      .blocks {
-        background: #f9f9f9;
-        display:block;
-        height:500px;
-        position:relative;
-        z-index: 8;
-        box-shadow: 0 0 10px #101010;
-        overflow: scroll;
-        .contact {
-          margin: 1em 0;
-          text-align: center;
+    .slider-wrap {
+      @media (max-width: 768px) { width: 100%!important; }
+      .content-blocks {
+        margin: 0 auto;
+        @media (max-width: 768px) { width: 100%!important; }
+        .blocks {
+          background: #f9f9f9;
+          display:block;
+          height:500px;
+          position:relative;
+          z-index: 8;
+          box-shadow: 0 0 10px #101010;
+          overflow: scroll;
+          @media (max-width: 768px) {
+            float: none!important;
+            margin: 5%!important;
+            width: 90%!important;
+            height: 100%!important;
+          }
+          .contact {
+            margin: 1em 0;
+            text-align: center;
+          }
         }
-        // margin-right: 350px;
-        // &:first-child { background:#f9f9f9; }
-        // &:nth-child(2) { background: red; }
-        // &:nth-child(3) { background: blue; }
-        // &:last-child { background: green; }
       }
     }
   }
