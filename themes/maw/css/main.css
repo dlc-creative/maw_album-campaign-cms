@@ -48,9 +48,6 @@ h4, h5, h6 {
   font-weight: normal;
   text-align: center; }
 
-.contact b {
-  font-family: "MAW", sans-serif !important; }
-
 a {
   text-decoration: none !important; }
 
@@ -76,7 +73,8 @@ ul {
   color: #fff; }
   #main-container .hero-banner h1 {
     font-size: 60px;
-    text-shadow: 0 0 10px #000; }
+    text-shadow: 0 0 10px #000;
+    text-transform: lowercase; }
 
 #main-container .wrap {
   margin: 3em 0; }
