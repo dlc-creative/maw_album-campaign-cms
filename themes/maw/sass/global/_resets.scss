@@ -1,0 +1,55 @@
+/* RESETS */
+
+* { box-sizing: border-box; }
+
+html, body {
+	// color: color(cadillacLightGray);
+  font-weight: normal;
+  font-size: 15px;
+	font-smoothing: antialiased;
+  line-height: 20px;
+	text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+}
+
+body {
+  &.maw-bg {
+    background: url("../img/maw-bg.jpg") no-repeat center center fixed;
+  	// background-size: cover;
+  	background-position: 50%;
+  }
+  &:before {
+    // content: "";
+    background: linear-gradient(#ff9000 20%, #0000ff 50%);
+    position: absolute;
+    left: 0;
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+  }
+}
+
+img, video, iframe {
+	width: 100%;
+	height: 100%;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  margin: 1em!important;
+	font-family: "MAW", sans-serif!important;
+  font-weight: normal;
+  text-align: center;
+}
+.contact b { font-family: "MAW", sans-serif!important; }
+
+a { text-decoration: none!important; }
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
