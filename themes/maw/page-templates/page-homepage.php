@@ -37,8 +37,14 @@ if ($end['type'] == 'link_picker') {
 							}
 							break;
 						case "image":
-							$cta = ($val['name'] == 'maw-image') ? '<div id="cast"><a href="/shop/">Purchase</a></div>' : '';
-							$content = $cta.'<img src="'.$val['value'].'" />';
+							if ($val['name'] == 'maw-image') {
+								$a_prefix = '<a href="/shop/">';
+								$a_suffix = '</a>';
+							} else {
+								$a_prefix = '';
+								$a_suffix = '';
+							}
+							$content = $a_prefix.'<img src="'.$val['value'].'" />'.$a_suffix;
 							break;
 						case "textarea":
 							$content = '<h2>'.ucwords($val['name']).'</h2>';

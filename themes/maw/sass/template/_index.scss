@@ -1,6 +1,6 @@
 #main-container {
   .hero-banner {
-    background: url("../img/maw-bg.jpg") no-repeat center center fixed;
+    background: url("../img/maw_site_bg.png") no-repeat center center fixed;
   	// background-size: cover;
   	background-position: 50%;
     max-height: 300px;
@@ -48,7 +48,9 @@
           position:relative;
           z-index: 8;
           box-shadow: 0 0 10px #101010;
-          overflow: scroll;
+          overflow-y: scroll;
+          -ms-overflow-style: none;
+          &::-webkit-scrollbar { width: 0px; }
           &.disable-scroll { overflow: hidden!important; }
           &:hover > #cast { opacity: 1!important; }
           &.social {

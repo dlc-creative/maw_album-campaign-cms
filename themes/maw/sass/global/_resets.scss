@@ -16,9 +16,9 @@ html, body {
 
 body {
   &.maw-bg {
-    background: url("../img/maw-bg.jpg") no-repeat center center fixed;
+    background: url("../img/maw_site_bg.png") no-repeat center center fixed;
   	// background-size: cover;
-  	background-position: 50%;
+  	background-position: 60% -30%; // 50% -40%
   }
   &:before {
     // content: "";
